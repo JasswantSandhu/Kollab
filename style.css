@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  
+}
+
+body{
+    background-color: white;
+}
+
+
+
+.navbar-brand{
+    color:white;
+    font-size: 1.5em;
+    margin-left:0.5em;
+    font-weight: 750;
+    transition: all 0.3s ease 0s;
+  
+}
+
+.navbar-brand:hover{
+    color:black;
+}
+
+
+
+
+.navbar-brand:active{
+    color:green;
+}
+
+
+
+.navbar-nav{
+    margin-left:0.75em;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+.navbar-nav a{
+    color:white;
+    transition: all 0.3s ease 0s;
+}
+
+button{
+  color:white;
+}
+
+
+#navbarNavAltMarkup{
+  color:white;
+}
+
+/* Custom CSS for changing the color of the lines in the hamburger icon to white */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 1 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22m-7 8h7'/%3E%3C/svg%3E");
+}
+

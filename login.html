@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0077b6, #00a6fb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 30px;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .login-card h2 {
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border: 2px solid #0077b6;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .login-input:focus {
+            border-color: #00a6fb;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #00a6fb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #0077b6;
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .login-link {
+            color: #00a6fb;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .login-link:hover {
+            color: #0077b6;
+        }
+
+        .login-card::before {
+            content: "\f007";
+            font-family: FontAwesome;
+            font-size: 48px;
+            color: #0077b6;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .login-card p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .login-card footer {
+            margin-top: 20px;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .error-message {
+            color: #ff3d00;
+            margin-top: 10px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .remember-me input[type="checkbox"] {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <i class="fas fa-user-circle"></i>
+        <h2>Welcome Back!</h2>
+        <form id="loginForm">
+            <input class="login-input" type="text" name="username" placeholder="Username" required><br>
+            <input class="login-input" type="password" name="password" placeholder="Password" required><br>
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+            <button class="login-btn" type="button" id="loginBtn">Login</button>
+            <div class="error-message" id="errorMessage"></div>
+        </form>
+        <a href="#" class="login-link">Forgot Password?</a>
+        <p>Don't have an account? <a href="#" class="login-link">Sign Up</a></p>
+        <footer>&copy; 2023 Kollab</footer>
+    </div>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"></script>
+
+   
+</body>
+</html>
